@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('fornecedores', [\App\Http\Controllers\fornecedorController::class, 'index']);
+// Route::get('fornecedores/{id}', [\App\Http\Controllers\fornecedorController::class, 'show']);
+
+Route::get('fornecedorView', [\App\Http\Controllers\fornecedorController::class, 'index']);
